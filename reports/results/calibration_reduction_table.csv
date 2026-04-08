@@ -1,0 +1,4 @@
+Horizon,LR uncal ECE,LR best cal ECE,LR reduction,XGB uncal ECE,XGB best cal ECE,XGB reduction,XGB > LR reduction
+1d,0.1508,0.1592,-0.0084,0.1634,0.1554,0.0079,True
+5d,0.1985,0.2268,-0.0283,0.1904,0.1498,0.0406,True
+20d,0.3567,0.3807,-0.0239,0.3699,0.1866,0.1832,True

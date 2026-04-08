@@ -1,0 +1,61 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Data}{1}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Dataset Description}{1}{subsection.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Dataset overview.}}{2}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:dataset-summary}{{1}{2}{Dataset overview}{table.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Features}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Feature set used across all prediction horizons.}}{2}{table.caption.2}\protected@file@percent }
+\newlabel{tab:features}{{2}{2}{Feature set used across all prediction horizons}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Class Balance}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Train / Test Split}{2}{subsection.2.4}\protected@file@percent }
+\newlabel{sec:split}{{2.4}{2}{Train / Test Split}{subsection.2.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Test-set class distribution per prediction horizon.}}{2}{table.caption.3}\protected@file@percent }
+\newlabel{tab:test-balance}{{3}{2}{Test-set class distribution per prediction horizon}{table.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Target Construction}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{3}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Baseline Models}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Logistic Regression (LR).}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{XGBoost (XGB).}{3}{equation.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Calibration Metrics}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Expected Calibration Error (ECE).}{4}{subsection.4.2}\protected@file@percent }
+\newlabel{eq:ece}{{3}{4}{Expected Calibration Error (ECE)}{equation.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Maximum Calibration Error (MCE).}{4}{equation.4.3}\protected@file@percent }
+\newlabel{eq:mce}{{4}{4}{Maximum Calibration Error (MCE)}{equation.4.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Supporting metrics.}{4}{equation.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Post-Hoc Calibration Methods}{4}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:calib-methods}{{4.3}{4}{Post-Hoc Calibration Methods}{subsection.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Platt Scaling (sigmoid calibration).}{4}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Isotonic Regression.}{4}{equation.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Cross-validated calibration.}{5}{equation.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results: Baseline (Pre-Calibration)}{5}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Discriminative Performance}{5}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Baseline AUC on the test set. Values rounded to 3 significant digits.}}{5}{table.caption.4}\protected@file@percent }
+\newlabel{tab:baseline-auc}{{4}{5}{Baseline AUC on the test set. Values rounded to 3 significant digits}{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Calibration Metrics Before Calibration}{5}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Pre-calibration metrics on the test set. ECE and MCE computed with $B=10$ bins. Values rounded to 3 significant digits.}}{6}{table.caption.5}\protected@file@percent }
+\newlabel{tab:pre-calib}{{5}{6}{Pre-calibration metrics on the test set. ECE and MCE computed with $B=10$ bins. Values rounded to 3 significant digits}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Reliability Diagrams (Pre-Calibration)}{6}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Reliability diagrams before calibration for Logistic Regression (left) and XGBoost (right) at horizons 1d, 5d, and 20d. Dashed diagonal represents perfect calibration. ECE and Brier Score are annotated per subplot.}}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:reliability-pre}{{1}{7}{Reliability diagrams before calibration for Logistic Regression (left) and XGBoost (right) at horizons 1d, 5d, and 20d. Dashed diagonal represents perfect calibration. ECE and Brier Score are annotated per subplot}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results: Post-Calibration}{7}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Post-Calibration Metrics}{7}{subsection.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Post-calibration ECE on the test set. ``Platt'' = sigmoid calibration; ``Iso'' = Isotonic Regression. $\Delta \text  {ECE} = \text  {ECE}_\text  {raw} - \text  {ECE}_\text  {calibrated}$; positive values indicate improvement. Values to 3 significant figures.}}{8}{table.caption.7}\protected@file@percent }
+\newlabel{tab:post-calib}{{6}{8}{Post-calibration ECE on the test set. ``Platt'' = sigmoid calibration; ``Iso'' = Isotonic Regression. $\Delta \text {ECE} = \text {ECE}_\text {raw} - \text {ECE}_\text {calibrated}$; positive values indicate improvement. Values to 3 significant figures}{table.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Reliability Diagrams (Post-Calibration)}{8}{subsection.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Reliability diagrams after calibration. Four variants per row: LR+Platt, LR+Isotonic, XGB+Platt, XGB+Isotonic. Rows correspond to horizons 1d (top), 5d (middle), 20d (bottom).}}{8}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:reliability-post}{{2}{8}{Reliability diagrams after calibration. Four variants per row: LR+Platt, LR+Isotonic, XGB+Platt, XGB+Isotonic. Rows correspond to horizons 1d (top), 5d (middle), 20d (bottom)}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Hypothesis Evaluation}{8}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}H1 --- XGBoost is Less Calibrated than Logistic Regression}{8}{subsubsection.6.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}H2 --- Calibration Error Increases Monotonically with Horizon}{9}{subsubsection.6.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}H3 --- Post-Calibration ECE Reduction is Greater for XGBoost}{9}{subsubsection.6.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{10}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Why Calibration Matters in Regime Prediction}{10}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Limitations}{10}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Comparison of Calibration Methods}{10}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{10}{section.8}\protected@file@percent }
+\gdef \@abspage@last{11}
